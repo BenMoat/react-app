@@ -1,4 +1,6 @@
 import ListGroup from "./components/ListGroup";
+import Button from "./components/Button/Button";
+import Like from "./components/Like";
 
 function App() {
   let items = ["New York", "San Fransisco", "Tokyo", "London", "Paris"];
@@ -9,11 +11,7 @@ function App() {
 
   return (
     <div>
-      <ListGroup
-        items={items}
-        heading="Cities"
-        onSelectItem={handleSelectItem}
-      />
+      <Like onClick={() => console.log("clicked")} />
     </div>
   );
 }
